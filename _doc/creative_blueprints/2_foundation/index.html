@@ -1,0 +1,73 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; align-items: stretch; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-problem { width: 42%; }
+  .mode-landscape .sl-solution { width: 33%; }
+  .mode-landscape .sl-visual { width: 25%; }
+  .mode-portrait .sl-problem { width: 100%; }
+  .mode-portrait .sl-solution { width: 100%; }
+  .mode-portrait .sl-visual { display: none; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Problem column -->
+    <div class="sl-problem flex flex-col justify-center p-12" style="background: #0f1f3d;">
+      <span class="text-xs font-bold tracking-widest uppercase mb-6" style="color: #f87171;">The Problem</span>
+      <h2 class="font-bold mb-6" style="font-size: 2rem; color: #ffffff; line-height: 1.2;">
+        Banking apps are cluttered, slow, and hard to navigate.
+      </h2>
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <span class="mt-1 flex-shrink-0 w-2 h-2 rounded-full" style="background: #f87171;"></span>
+          <p style="color: #93c5fd; font-size: 0.95rem; line-height: 1.6;">Users can't find their balance without clicking through multiple menus.</p>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-1 flex-shrink-0 w-2 h-2 rounded-full" style="background: #f87171;"></span>
+          <p style="color: #93c5fd; font-size: 0.95rem; line-height: 1.6;">Card management is buried or requires calling a branch.</p>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="mt-1 flex-shrink-0 w-2 h-2 rounded-full" style="background: #f87171;"></span>
+          <p style="color: #93c5fd; font-size: 0.95rem; line-height: 1.6;">Transaction histories are difficult to search or make sense of at a glance.</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Solution column -->
+    <div class="sl-solution flex flex-col justify-center p-12" style="background: #1e3a5f; border-left: 1px solid rgba(255,255,255,0.08);">
+      <span class="text-xs font-bold tracking-widest uppercase mb-6" style="color: #34d399;">The Solution</span>
+      <h2 class="font-bold mb-6" style="font-size: 1.7rem; color: #ffffff; line-height: 1.2;">
+        One screen. Everything you need to know.
+      </h2>
+      <p style="color: #93c5fd; font-size: 0.95rem; line-height: 1.7;">
+        A focused banking app that surfaces your balance, cards, and transactions instantly — with a calm, premium design that earns trust at first glance. No clutter. No confusion. Just clarity.
+      </p>
+      <div class="mt-8 flex flex-col gap-3">
+        <div class="flex items-center gap-3 px-4 py-3 rounded-xl" style="background: rgba(59,130,246,0.15);">
+          <span style="color: #60a5fa; font-size: 1.2rem;">&#9679;</span>
+          <span style="color: #e2e8f0; font-size: 0.9rem;">Instant balance overview</span>
+        </div>
+        <div class="flex items-center gap-3 px-4 py-3 rounded-xl" style="background: rgba(59,130,246,0.15);">
+          <span style="color: #60a5fa; font-size: 1.2rem;">&#9679;</span>
+          <span style="color: #e2e8f0; font-size: 0.9rem;">Full card control in-app</span>
+        </div>
+        <div class="flex items-center gap-3 px-4 py-3 rounded-xl" style="background: rgba(59,130,246,0.15);">
+          <span style="color: #60a5fa; font-size: 1.2rem;">&#9679;</span>
+          <span style="color: #e2e8f0; font-size: 0.9rem;">Clear, searchable transactions</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right visual strip -->
+    <div class="sl-visual overflow-hidden">
+      <img
+        src="https://api.qb-deck.quantumbyte.ai/common/image-generation?prompt=frustrated%20person%20looking%20at%20confusing%20old%20banking%20app%20on%20phone%2C%20contrasted%20with%20a%20clean%20modern%20fintech%20interface%2C%20editorial%20split%20composition%2C%20muted%20tones"
+        alt="Problem vs solution illustration"
+        class="w-full h-full object-cover"
+        style="object-position: center;"
+      />
+    </div>
+
+  </div>
+</section>
