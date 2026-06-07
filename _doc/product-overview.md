@@ -1,0 +1,1 @@
+i want to create a modern banking app where users can easily check their balance, manage their card and transaction
