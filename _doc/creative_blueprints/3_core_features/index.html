@@ -1,0 +1,78 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-left { width: 38%; }
+  .mode-landscape .sl-right { width: 62%; }
+  .mode-portrait .sl-left { width: 100%; }
+  .mode-portrait .sl-right { width: 100%; }
+  .mode-landscape .sl-grid { grid-template-columns: 1fr 1fr; }
+  .mode-portrait .sl-grid { grid-template-columns: 1fr; }
+</style>
+
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Left: persona + label -->
+    <div class="sl-left flex flex-col justify-center p-12" style="background: #f8fafc; border-right: 1px solid #e2e8f0;">
+      <span class="text-xs font-bold tracking-widest uppercase mb-8" style="color: #3b82f6;">Core Features</span>
+
+      <!-- Persona chips -->
+      <div class="flex flex-wrap gap-2 mb-10">
+        <span class="px-4 py-2 rounded-full text-sm font-semibold" style="background: #0f1f3d; color: #ffffff;">Mobile-First User</span>
+        <span class="px-4 py-2 rounded-full text-sm font-medium border" style="border-color: #cbd5e1; color: #64748b;">Everyday Banker</span>
+        <span class="px-4 py-2 rounded-full text-sm font-medium border" style="border-color: #cbd5e1; color: #64748b;">Card Holder</span>
+      </div>
+
+      <h2 class="font-bold mb-4" style="font-size: 1.9rem; color: #0f1f3d; line-height: 1.2;">
+        Everything a modern banking user actually needs.
+      </h2>
+      <p style="color: #64748b; font-size: 0.9rem; line-height: 1.7;">
+        Three focused pillars — balance, cards, and transactions — designed for speed and clarity on mobile.
+      </p>
+    </div>
+
+    <!-- Right: feature cards grid -->
+    <div class="sl-right flex items-center p-12" style="background: #ffffff;">
+      <div class="sl-grid grid gap-5 w-full">
+
+        <!-- Balance -->
+        <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: #0f1f3d;">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background: #3b82f6;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-4 0v2"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
+          </div>
+          <h3 class="font-bold text-base" style="color: #ffffff;">Balance Overview</h3>
+          <p class="text-sm leading-relaxed" style="color: #93c5fd;">Your current balance and account summary displayed the moment you open the app. No taps required.</p>
+        </div>
+
+        <!-- Card Management -->
+        <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: #1e3a5f;">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background: #3b82f6;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+          </div>
+          <h3 class="font-bold text-base" style="color: #ffffff;">Card Management</h3>
+          <p class="text-sm leading-relaxed" style="color: #93c5fd;">View all cards, freeze or unfreeze instantly, and set spending limits — all without calling a branch.</p>
+        </div>
+
+        <!-- Transaction History -->
+        <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: #1e3a5f;">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background: #3b82f6;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3 class="font-bold text-base" style="color: #ffffff;">Transaction History</h3>
+          <p class="text-sm leading-relaxed" style="color: #93c5fd;">A clean, categorised, searchable feed of all your transactions. Find anything in seconds.</p>
+        </div>
+
+        <!-- Design principle card -->
+        <div class="rounded-2xl p-6 flex flex-col gap-3" style="background: #eff6ff; border: 1.5px solid #bfdbfe;">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background: #dbeafe;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#1d4ed8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3 class="font-bold text-base" style="color: #1e3a5f;">Calm by Design</h3>
+          <p class="text-sm leading-relaxed" style="color: #3b82f6;">Premium, minimal UI built for trust. Every screen is composed so the information you need is always in view.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
